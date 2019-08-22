@@ -18,7 +18,7 @@ install:
    - arduino --install-library "BLEPeripheral"
 
 script:
-   - build_main_platforms
+   - build_platform avr
 
 # Generate and deploy documentation
 after_success:
