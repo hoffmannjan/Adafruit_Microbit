@@ -14,7 +14,8 @@ before_install:
    - source <(curl -SLs https://raw.githubusercontent.com/adafruit/travis-ci-arduino/master/install.sh)
 
 install:
-   - arduino --install-library "Adafruit GFX Library" "BLEPeripheral"
+   - arduino --install-library "Adafruit GFX Library"
+   - arduino --install-library "BLEPeripheral"
 
 script:
    - build_main_platforms
